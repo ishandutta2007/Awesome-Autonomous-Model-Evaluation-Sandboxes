@@ -182,7 +182,7 @@ We welcome additions, updates, and corrections from the community!
    - For Open-Source tools: Include GitHub link, social Stars_Badge with link to stargazers (`style=social&color=white`), license, and core architectural features.
 3. 🔢 **Ensure proper sorting**:
    - Keep SaaS entries sorted by company scale (descending).
-   - Keep Open-Source entries sorted by GitHub Stars_Count (descending).
+   - Keep Open-Source entries sorted by GitHub_Stars_Count (descending).
 4. 🚀 **Open a Pull Request** with a concise description of your additions.
 
 ---
