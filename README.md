@@ -1,185 +1,185 @@
-# Awesome-Autonomous-Model-Evaluation-Sandboxes
+# Awesome Autonomous Model Evaluation Sandboxes [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-## Top Autonomous Model Evaluation Sandboxes Ecosystem
+> A curated list of top Autonomous Model Evaluation Sandboxes, AI agent test environments, LLM-as-a-judge frameworks, and observability platforms for multi-turn test cycles, isolated evaluation, regression detection, and agent safety benchmarking.
 
-
+[![GitHub stars](https://img.shields.io/github/stars/ishandutta2007/Awesome-Autonomous-Model-Evaluation-Sandboxes?style=social)](https://github.com/ishandutta2007/Awesome-Autonomous-Model-Evaluation-Sandboxes/stargazers)
+[![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/ishandutta2007/Awesome-Autonomous-Model-Evaluation-Sandboxes/blob/main/CONTRIBUTING.md)
 
 **Curated List of SaaS Products & Open-Source GitHub Projects**  
-
-*Focused on Multi-Turn Test Cycles, Isolated Evaluation & Agent Observability*  
-
+*Focused on Multi-Turn Test Cycles, Isolated Evaluation, LLM Benchmarking & Agent Observability*  
 **Last updated: March 2026**
-
-
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Autonomous Model Evaluation Sandboxes**. These tools provide isolated environments for running multi-turn AI test cycles—tracing every agent step, scoring outputs with LLM judges, and comparing experiments to catch regressions before they reach production.
-
-
-
-**Examples** include Braintrust, LangSmith, DeepEval, Arize Phoenix, Ragas, TruLens, Galileo, Patronus AI, Humanloop, and Fiddler AI (the category leaders).
-
-
-
-**Open-source emphasis**: This section is heavily expanded with every major active project for self-hosting, OpenTelemetry-native tracing, and open evaluation frameworks—ideal for AI engineers, platform teams, and developers seeking transparent, vendor-independent model evaluation.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-- **[Braintrust](https://www.braintrust.dev/)**  
-
-  End-to-end AI product platform combining logging, evaluation datasets, prompt management, and AI proxy with automatic caching and fallback. Trusted by Notion, Stripe, Vercel, Dropbox, and Coursera. **Freemium**: Starter plan free (1 GB logs/month, 14-day retention, 10k eval runs/month), Pro at $249/month (5 GB, 30-day retention, 50k evals), Enterprise with self-hosted/BYOC options . Framework-agnostic with 50+ integrations including OpenAI, Anthropic, LangChain, CrewAI, and OpenTelemetry . **AI-assisted Loop Agent** automates optimization of prompts and evaluations .
-
-
-
-- **[LangSmith](https://smith.langchain.com/)**  
-
-  LangChain's observability and evaluation platform with detailed tracing of every LLM call, chain execution, and agent step—showing inputs, outputs, latency, token usage, and cost. Most comprehensive debugging tool for LangChain-based applications . **Free Developer plan** (1 seat, 5k base traces/month), **Plus at $39/seat/month** (10k base traces, 1 free serverless deployment), Enterprise with self-hosted/hybrid options . **Note**: LangSmith is **not fully open source**—it is a hosted, commercial product with a generous free tier . Self-hosted option available as Enterprise add-on running in your Kubernetes cluster .
-
-
-
-- **[Galileo](https://galileo.ai/)**  
-
-  Enterprise AI evaluation and observability platform with Experiments API, Groups API, and Integrations API. Provides systematic evaluation workflows for production AI systems .
-
-
-
-- **[Humanloop](https://humanloop.com/)**  
-
-  LLM Evals Platform for Enterprises with prompt engineering, evaluation, and observability. **Free tier**: 2 members, 50 eval runs, 10K logs/month. Enterprise adds SSO+SAML, RBAC, VPC deployment, and SLAs. Supports both UI-first and code-first workflows for technical and non-technical team members .
-
-
-
-- **[Patronus AI](https://www.patronus.ai/)**  
-
-  Hosted evaluation API running configurable evaluators for hallucination (Lynx), toxicity, PII, prompt injection, and custom judging. Single `/v1/evaluate` endpoint runs multiple evaluators per request with pass/fail verdicts and explanations. **Free Developer tier** with starter credit .
-
-
-
-- **[Fiddler AI](https://www.fiddler.ai/)**  
-
-  Enterprise AI observability and model performance monitoring with explainability, bias detection, and LLM evaluation. **Experiments** feature supports A/B testing prompts, model version comparison, regression testing, safety validation, and RAG system evaluation using RAG Health Metrics (AnswerRelevance, ContextRelevance, RAGFaithfulness) .
-
-
-
-## Open-Source GitHub Projects
-
-
-
-- **[DeepEval](https://github.com/confident-ai/deepeval)**  
-
-  Simple-to-use open-source LLM evaluation framework (Apache-2.0), similar to Pytest but specialized for unit testing LLM outputs. **The most practical open-source eval framework for CI/CD integration** . Features **large variety of ready-to-use metrics** powered by ANY LLM or local NLP models: G-Eval, Summarization, Answer Relevancy, Faithfulness, Contextual Recall, Contextual Precision, RAGAS, Hallucination, Toxicity, Bias. **Red teaming** for 40+ safety vulnerabilities with 10+ attack enhancement strategies. Evaluate entire datasets in bulk in under 20 lines of Python code in parallel. Integrates seamlessly with **ANY CI/CD environment**. Create custom metrics by inheriting base metric class. Benchmarks any LLM on MMLU, HellaSwag, BIG-Bench Hard, TruthfulQA, HumanEval, GSM8K in under 10 lines of code. Optional Confident AI cloud integration for logging, tracing, and production evaluation .
-
-
-
-- **[Arize Phoenix](https://github.com/Arize-ai/phoenix)**  
-
-  Open-source AI observability platform (Elastic License 2.0) designed for experimentation, evaluation, and troubleshooting . Features **tracing** via OpenTelemetry-based instrumentation, **evaluation** using LLMs to benchmark performance, **datasets** for versioned examples, **experiments** for tracking prompt/model/retrieval changes, **playground** for prompt optimization and model comparison, and **prompt management** with version control. Vendor and language agnostic with out-of-the-box support for LlamaIndex, LangChain, Haystack, DSPy, smolagents, and LLM providers including OpenAI, Bedrock, MistralAI, VertexAI, LiteLLM, and Google GenAI . Runs practically anywhere: local machine, Jupyter notebook, containerized deployment, or cloud . **2.5M+ monthly downloads**, **10,800+ GitHub stars** .
-
-
-
-- **[Ragas](https://github.com/vibrantlabsai/ragas)**  
-
-  Open-source toolkit for evaluating and optimizing LLM applications (Apache-2.0). **The leading open-source RAG evaluation framework** . Features **objective metrics** (LLM-based and traditional), **test data generation** (automatically create comprehensive test datasets covering wide range of scenarios), **seamless integrations** with LangChain and major observability tools, and **feedback loops** leveraging production data. Install via `pip install ragas`. CLI quickstart: `ragas quickstart rag_eval` creates complete RAG evaluation project .
-
-
-
-- **[TruLens](https://github.com/truera/trulens)**  
-
-  Open-source evaluation and tracing framework (Apache-2.0). **OpenTelemetry-native**—instrument any app with a decorator, score every step with LLM judges that explain themselves, compare versions, and ship the one that earns it . Features **trace every step** (latency, inputs, outputs, tokens, cost recorded per step), **compare versions** (scores, latency, cost per app version), **seven purpose-built evaluators for agentic systems** (LogicalConsistency, ExecutionEfficiency, PlanAdherence, PlanQuality, ToolSelection, etc.). Judges are graded against human annotations out of the box: **95% agent errors caught with Agent GPA on TRAIL/GAIA** (vs 55% baseline), **0.81 Groundedness F1 on LLM-AggreFact**, **0.93 Context relevance NDCG@5** . Adopted by Walmart Global Tech, Cisco, J.P. Morgan Chase, Equinix, VMware by Broadcom, Hitachi Digital Services, Thomson Reuters . Tracing is OpenTelemetry-native—portable to any OTLP backend (Jaeger, Grafana Tempo, Datadog) .
-
-
-
-- **[Braintrust Go SDK](https://github.com/braintrustdata/braintrust-x-go)**  
-
-  Open-source Go SDK for Braintrust (Apache-2.0) in BETA status. Features evaluations with custom scoring functions, automatic instrumentation for OpenAI and Anthropic API calls, datasets management and versioning, experiments tracking, and production observability . **Note**: SDK is open-source; the Braintrust platform itself is commercial SaaS with self-hosted options on Enterprise .
-
-
-
-- **[Promptfoo](https://github.com/promptfoo/promptfoo)**  
-
-  Open-source LLM testing and red-teaming framework (MIT). **20,000+ GitHub stars**. Listed as one of five tools people actually use for LLM evaluation alongside Braintrust, LangSmith, Inspect, and Ragas . OpenAI announced acquisition in March 2026 with commitment to keep the open-source project going.
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **[Inspect](https://github.com/UKGovernmentBEIS/inspect_ai)** — Open-source framework for large language model evaluations from UK AI Safety Institute. Listed as one of five tools people actually use for LLM evaluation .
-
-- **[Langfuse](https://github.com/langfuse/langfuse)** — Open-source LLM engineering platform (MIT core) with tracing, evaluations, prompt management, and datasets. **35,000+ GitHub stars**. Self-hostable. **Acquired by ClickHouse in January 2026 with commitment to keep it open source** .
-
-- **[Comet Opik](https://github.com/comet-ml/opik)** — Fully-permissive Apache-2.0 rival to Langfuse. **22,000+ GitHub stars**. Full platform—backend included—free to self-host. Covers AI agent tracing, LLM evaluation, prompt optimization, production monitoring, and Opik Guardrails.
-
-- **[OpenLLMetry (Traceloop)](https://github.com/traceloop/openllmetry)** — Apache-2.0 OpenTelemetry instrumentation for LLM providers, vector DBs, and frameworks. Emits standard `gen_ai` spans portable to any OTel backend .
-
-- Community **n8n** workflows for evaluation alerting and regression detection automation.
-
-
-
-**Frameworks for building custom systems**: Combine **DeepEval** for CI/CD-integrated test cycles with **Arize Phoenix** for OpenTelemetry-native tracing and experiments, **TruLens** for agentic evaluation and version comparison, **Ragas** for RAG-specific metrics, and **ClickHouse/PostgreSQL** for trace storage—creating a fully self-hosted, enterprise-grade model evaluation platform.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Model evaluation platforms handling prompts and traces must comply with data protection regulations (GDPR, CCPA, etc.), especially when traces contain PII.
-
-- **"Open source" means different things in this category.** DeepEval, Ragas, and TruLens are genuinely open source (Apache-2.0). Arize Phoenix uses Elastic License 2.0 (source-available, not OSI-approved). LangSmith is closed SaaS with open SDKs and Enterprise self-hosting. Braintrust is closed SaaS with open SDKs and Enterprise self-hosting. **Check the LICENSE file, not the marketing page** .
-
-- **Self-hosting is a hard requirement when prompts or traces carry regulated data.** If they do, the field collapses to DeepEval, Phoenix, Ragas, TruLens, Langfuse, Opik, and OpenLLMetry. LangSmith and Braintrust cannot self-host on lower tiers .
-
-- **Observability is not evaluation.** Tracing tells you what happened; evaluation tells you whether it was good. Most tools ship both—which makes it easy to buy one and never configure the other. Tracing alone will not catch quality drift.
-
-- Self-hosted open-source solutions require proper security hardening, LLM infrastructure (or API keys), and ongoing maintenance. Evaluation judges are themselves LLMs—their scores are probabilistic and should be validated against human annotations for high-stakes decisions.
-
-
 
 ---
 
+## Overview
 
+This repository tracks notable **SaaS platforms** and **open-source projects** for **Autonomous Model Evaluation Sandboxes**. These environments enable AI engineers, platform teams, and LLM practitioners to run multi-turn test cycles in isolated execution sandboxes—tracing every agent step, scoring intermediate and final outputs with LLM judges, stress-testing tool execution, and comparing experiment runs to catch hallucinations and regressions before production deployment.
 
-**Made for AI engineers, platform teams, and developers building transparent model evaluation solutions.**  
+### Key Capabilities Evaluated
+- **Multi-Turn Agent Trajectory Tracing**: Step-by-step visibility into tool selection, arguments, environment feedback, and intermediate reasoning.
+- **Automated LLM Judges**: Scalable scoring for ground truth alignment, RAG faithfulness, context recall, toxicity, and task completion.
+- **Execution Sandboxing**: Isolated containers and virtualized environments to execute generated agent actions safely.
+- **Experiment Tracking & Regression Guardrails**: CI/CD-friendly test runs to benchmark model versions against baseline prompts and golden datasets.
 
-Let's make Autonomous Model Evaluation Sandboxes more open, data-driven, and reliable.
+---
+
+## Table of Contents
+
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
+- [SaaS & Hosted Platforms](#saashosted-platforms)
+- [Open-Source GitHub Projects](#open-source-github-projects)
+- [Key Architectural Patterns](#key-architectural-patterns)
+- [How to Contribute](#how-to-contribute)
+- [Disclaimer & License Considerations](#disclaimer)
+
+---
+
+## Sector Overview & Market Dynamics
+
+The AI evaluation and observability market is valued at approximately **$1.8B to $2.9B** and is expanding rapidly at an estimated **25%–36% CAGR**, projected to exceed **$9B–$13B** by the early 2030s driven by production generative AI and multi-agent deployment. The sector is **moderately to highly fragmented** across niche developer-first point solutions (automated LLM judges, agent sandboxes, guardrails, and telemetry), while simultaneously undergoing rapid strategic consolidation as cloud hyperscalers, data platforms, and enterprise APM leaders acquire standalone tooling.
+
+---
+
+## SaaS/Hosted Platforms
+
+The following SaaS platforms provide managed evaluation environments, automated regression testing, prompt management, and observability for AI agents and LLMs. The table is ordered by company scale (valuation / total funding raised in descending order).
+
+| Platform | Company Scale (Valuation / Funding) | Pricing (Starting Paid Tier) | Free Tier Limits | Key Highlights & Capabilities |
+| :--- | :--- | :--- | :--- | :--- |
+| **[LangSmith](https://smith.langchain.com/)** | **$1.25B Valuation** ($260M raised) | **$39/seat/month** (Plus tier) | **5,000 base traces/month**, 1 seat, 14-day data retention | Deep tracing of LLM chains, agent steps, token usage, latency, and cost metrics; Enterprise self-hosted Kubernetes options available. |
+| **[Braintrust](https://www.braintrust.dev/)** | **$800M Valuation** ($121M raised) | **$249/month** (Pro tier) | **10,000 eval runs/month**, 1 GB log storage/month, 14-day retention | End-to-end evaluation datasets, AI proxy with automated caching, prompt engineering, and AI-assisted Loop Agent for prompt auto-tuning. |
+| **[Fiddler AI](https://www.fiddler.ai/)** | **$100M Funding** (Series C) | **$0.002 per trace** (Developer tier) | **Real-time guardrails free tier** (<80ms latency checks for toxicity, PII, prompt injection) & **30-day AWS Marketplace trial** (up to 5 models) | Enterprise AI observability, bias auditing, model monitoring, and specialized RAG health metrics (AnswerRelevance, ContextRelevance, Faithfulness). |
+| **[Patronus AI](https://www.patronus.ai/)** | **$70M Funding** (Series B) | **$25/month** base (plus $10–$20 per 1k evaluator calls) | **$10 free API credits**, 2 projects, 5 experiments per project, 14-day log retention | Hosted evaluation API running automated judges for hallucination detection (Lynx), toxicity, PII leakage, and custom LLM scoring. |
+| **[Galileo](https://galileo.ai/)** | **$68M Funding** (Series B) | **$100/month** (Pro tier, billed annually) | **5,000 traces/month**, unlimited users, and unlimited custom evaluations | Systematic evaluation workflows with Experiments API, fine-tuning observability, hallucination metrics, and agent workflow debugging. |
+| **[Humanloop](https://humanloop.com/)** | **$7.9M Funding** (Acquired team by Anthropic) | **$45/seat/month** (Team tier prior to acquisition) | **50 eval runs/month**, 2 team members, 10,000 logs/month | Collaborative prompt engineering studio, human-in-the-loop review, automated evals, and multi-model benchmark comparisons. |
+
+---
+
+## Open-Source GitHub Projects
+
+These open-source frameworks and self-hosted platforms provide code-first evaluation pipelines, agent execution sandboxes, and OpenTelemetry-native tracing without vendor lock-in. Sorted by GitHub stargazer count (descending).
+
+- **[Langfuse](https://github.com/langfuse/langfuse)** [![GitHub stars](https://img.shields.io/github/stars/langfuse/langfuse?style=social&color=white)](https://github.com/langfuse/langfuse/stargazers)  
+  *Open-source LLM engineering and observability platform (MIT core).*  
+  Full-featured self-hostable platform offering detailed trace trees for multi-step agent workflows, prompt management with version control, LLM-as-a-judge evaluations, and dataset curation. OpenTelemetry-compliant and highly extensible with ClickHouse analytics backend.
+
+- **[Promptfoo](https://github.com/promptfoo/promptfoo)** [![GitHub stars](https://img.shields.io/github/stars/promptfoo/promptfoo?style=social&color=white)](https://github.com/promptfoo/promptfoo/stargazers)  
+  *Fast, lightweight CLI and library for LLM evaluation and red-teaming (MIT).*  
+  Specialized for test-driven development (TDD) of prompts, agent applications, and RAG pipelines. Features automated red teaming against 40+ security vulnerabilities, prompt injection benchmarks, latency/cost diffs, and native integration into GitHub Actions and CI/CD pipelines.
+
+- **[Comet Opik](https://github.com/comet-ml/opik)** [![GitHub stars](https://img.shields.io/github/stars/comet-ml/opik?style=social&color=white)](https://github.com/comet-ml/opik/stargazers)  
+  *Open-source, end-to-end LLM evaluation and tracing suite (Apache-2.0).*  
+  Completely permissive Apache-2.0 platform designed for production AI agent tracing, online and offline LLM evaluation, prompt optimization, and Opik Guardrails. Both frontend and backend are 100% free to self-host via Docker or Kubernetes.
+
+- **[OpenAI Evals](https://github.com/openai/evals)** [![GitHub stars](https://img.shields.io/github/stars/openai/evals?style=social&color=white)](https://github.com/openai/evals/stargazers)  
+  *Framework for evaluating LLMs and systems built on LLMs (MIT).*  
+  OpenAI's official evaluation harness for benchmarking models against custom datasets. Supports writing custom `Eval` classes, evaluating complex multi-turn conversational agents, and building standardized benchmark suites.
+
+- **[DeepEval](https://github.com/confident-ai/deepeval)** [![GitHub stars](https://img.shields.io/github/stars/confident-ai/deepeval?style=social&color=white)](https://github.com/confident-ai/deepeval/stargazers)  
+  *The "Pytest for LLMs" open-source evaluation framework (Apache-2.0).*  
+  The most practical open-source unit-testing eval framework for CI/CD pipelines. Features 14+ ready-to-use metrics (G-Eval, Hallucination, Faithfulness, Contextual Recall/Precision, Toxicity, Bias), synthetic test dataset generation, red-teaming scans, and standard model benchmark runners (MMLU, GSM8K, HumanEval).
+
+- **[Ragas](https://github.com/vibrantlabsai/ragas)** [![GitHub stars](https://img.shields.io/github/stars/vibrantlabsai/ragas?style=social&color=white)](https://github.com/vibrantlabsai/ragas/stargazers)  
+  *Evaluation toolkit for Retrieval-Augmented Generation & agent pipelines (Apache-2.0).*  
+  Leading framework for objective evaluation of RAG systems and multi-turn workflows. Provides metrics for faithfulness, answer relevancy, context precision, and automated evolutionary synthetic dataset generation for edge cases.
+
+- **[LM Evaluation Harness](https://github.com/EleutherAI/lm-evaluation-harness)** [![GitHub stars](https://img.shields.io/github/stars/EleutherAI/lm-evaluation-harness?style=social&color=white)](https://github.com/EleutherAI/lm-evaluation-harness/stargazers)  
+  *The standard framework for few-shot language model evaluation (MIT).*  
+  Maintained by EleutherAI and powers the Hugging Face Open LLM Leaderboard. Features 60+ standardized academic benchmarks (GSM8K, MMLU, ARC, HellaSwag, TruthfulQA) with support for vLLM, HuggingFace transformers, and API-based models.
+
+- **[Arize Phoenix](https://github.com/Arize-ai/phoenix)** [![GitHub stars](https://img.shields.io/github/stars/Arize-ai/phoenix?style=social&color=white)](https://github.com/Arize-ai/phoenix/stargazers)  
+  *AI observability, evaluation, and experiment tracking platform (Elastic License 2.0).*  
+  Built natively on OpenTelemetry standards for multi-turn agent tracing, LLM-as-a-judge benchmarking, embedding visualization, dataset versioning, and prompt playground comparisons. Vendor-agnostic with integrations across LangChain, LlamaIndex, DSPy, and smolagents.
+
+- **[Llama Stack](https://github.com/meta-llama/llama-stack)** [![GitHub stars](https://img.shields.io/github/stars/meta-llama/llama-stack?style=social&color=white)](https://github.com/meta-llama/llama-stack/stargazers)  
+  *Standardized building blocks and evaluation interfaces for LLMs and agents (MIT).*  
+  Meta's open standard architecture specifying turnkey APIs and evaluation protocols for inference, safety guardrails, synthetic data generation, scoring, and isolated agent execution.
+
+- **[OpenLLMetry](https://github.com/traceloop/openllmetry)** [![GitHub stars](https://img.shields.io/github/stars/traceloop/openllmetry?style=social&color=white)](https://github.com/traceloop/openllmetry/stargazers)  
+  *OpenTelemetry-native instrumentation SDKs for LLMs and agents (Apache-2.0).*  
+  Maintained by Traceloop. Automatically captures standard OpenTelemetry semantic conventions (`gen_ai.*`) across OpenAI, Anthropic, Bedrock, vector databases (Pinecone, Chroma, Qdrant), and frameworks, exporting directly to Datadog, Grafana, Dynatrace, or Jaeger.
+
+- **[SWE-bench](https://github.com/swe-bench/SWE-bench)** [![GitHub stars](https://img.shields.io/github/stars/swe-bench/SWE-bench?style=social&color=white)](https://github.com/swe-bench/SWE-bench/stargazers)  
+  *Benchmark and evaluation sandbox for software engineering agents (MIT).*  
+  Gold standard evaluation benchmark that evaluates autonomous AI agents on real-world GitHub issues and pull requests across complete code repositories using isolated Docker sandboxes for verification.
+
+- **[AgentBench](https://github.com/THUDM/AgentBench)** [![GitHub stars](https://img.shields.io/github/stars/THUDM/AgentBench?style=social&color=white)](https://github.com/THUDM/AgentBench/stargazers)  
+  *Multi-dimensional benchmark for evaluating LLMs as autonomous agents (Apache-2.0).*  
+  Evaluates agents across distinct interactive environments including Operating System commands (Bash), Database interactions (SQL), Web navigation, Digital Games, and lateral thinking tasks.
+
+- **[TruLens](https://github.com/truera/trulens)** [![GitHub stars](https://img.shields.io/github/stars/truera/trulens?style=social&color=white)](https://github.com/truera/trulens/stargazers)  
+  *OpenTelemetry-native evaluation and agent feedback framework (Apache-2.0).*  
+  Specialized evaluators for agentic systems including LogicalConsistency, ExecutionEfficiency, PlanAdherence, PlanQuality, and ToolSelection. Bridges offline test cycles with live production monitoring.
+
+- **[Inspect AI](https://github.com/UKGovernmentBEIS/inspect_ai)** [![GitHub stars](https://img.shields.io/github/stars/UKGovernmentBEIS/inspect_ai?style=social&color=white)](https://github.com/UKGovernmentBEIS/inspect_ai/stargazers)  
+  *Evaluation framework for AI safety and autonomous agent capabilities (MIT).*  
+  Developed by the UK AI Safety Institute. Provides built-in support for multi-step agent tasks, cyber defense evaluations, tool use, model sandboxing, and human-in-the-loop validation.
+
+- **[HELM (Holistic Evaluation of Language Models)](https://github.com/stanford-crfm/helm)** [![GitHub stars](https://img.shields.io/github/stars/stanford-crfm/helm?style=social&color=white)](https://github.com/stanford-crfm/helm/stargazers)  
+  *Standardized multi-metric evaluation across accuracy, robustness, fairness, and toxicity (Apache-2.0).*  
+  Developed by Stanford Center for Research on Foundation Models (CRFM) to holistically assess foundation models and agents across broad taxonomic domains.
+
+---
+
+## Key Architectural Patterns
+
+```
++-------------------------------------------------------------+
+|               Autonomous Agent / LLM App                   |
++-------------------------------------------------------------+
+                              | (Tracing / OTel Spans)
+                              v
++-------------------------------------------------------------+
+|             Isolated Execution Sandbox                      |
+|   (Docker / MicroVM / WebAssembly / Python Subprocess)      |
++-------------------------------------------------------------+
+                              | (Multi-Turn Artifacts & Logs)
+                              v
++-------------------------------------------------------------+
+|                   Evaluation Pipeline                       |
+|   - Deterministic Unit Checks (DeepEval, Pytest)            |
+|   - LLM-as-a-Judge (Promptfoo, TruLens, Patronus AI)        |
+|   - RAG Faithfulness & Retrieval Metrics (Ragas)            |
++-------------------------------------------------------------+
+                              | (Scores, Regressions & Traces)
+                              v
++-------------------------------------------------------------+
+|        Observability & Experimentation Dashboard            |
+|   (LangSmith, Langfuse, Braintrust, Arize Phoenix, Opik)    |
++-------------------------------------------------------------+
+```
+
+When building an enterprise-grade self-hosted autonomous model evaluation stack:
+1. **Tracing Layer**: Implement OpenTelemetry semantic conventions via **OpenLLMetry** or **Arize Phoenix**.
+2. **CI/CD Unit Tests**: Run continuous regression suites using **DeepEval** or **Promptfoo**.
+3. **Domain & RAG Scoring**: Evaluate retrieval and faithfulness metrics with **Ragas**.
+4. **Agent Benchmarking & Sandboxing**: Execute dynamic code and terminal actions inside **SWE-bench** or **Inspect AI** sandboxed containers.
+5. **Observability & Analytics**: Store and visualize traces with **Langfuse** (backed by ClickHouse) or **Comet Opik**.
+
+---
+
+## How to Contribute
+
+We welcome additions, updates, and corrections from the community!
+
+1. **Fork the repository** to your own GitHub account.
+2. **Add or update entries** in `README.md`:
+   - For SaaS tools: Specify exact starting prices, specific free tier limits, company valuation/funding, and product capabilities.
+   - For Open-Source tools: Include GitHub link, social star badge with link to stargazers (`style=social&color=white`), license, and core architectural features.
+3. **Ensure proper sorting**:
+   - Keep SaaS entries sorted by company scale (descending).
+   - Keep Open-Source entries sorted by GitHub star count (descending).
+4. **Open a Pull Request** with a concise description of your additions.
+
+---
+
+## Disclaimer
+
+- This is a community-curated collection intended for educational and architectural evaluation purposes.
+- Check each project's respective license before deploying in commercial or proprietary environments. While projects like **DeepEval**, **Ragas**, **Comet Opik**, and **OpenLLMetry** are Apache-2.0, others like **Arize Phoenix** use Elastic License 2.0 (source-available), and platforms like **LangSmith** and **Braintrust** operate proprietary hosted clouds with Enterprise on-premise options.
+- Evaluation judges are probabilistic; always calibrate automated LLM scores against human ground-truth annotations for critical production deployments.
+
+---
+
+*Maintained by [Ishan Dutta](https://github.com/ishandutta2007) and contributors. Star the repo if this helps your AI engineering workflow!*
