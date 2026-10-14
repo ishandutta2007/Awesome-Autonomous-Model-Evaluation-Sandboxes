@@ -9,7 +9,7 @@
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
   <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Autonomous-Model-Evaluation-Sandboxes/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Autonomous-Model-Evaluation-Sandboxes?style=social" alt="GitHub stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Autonomous-Model-Evaluation-Sandboxes/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Autonomous-Model-Evaluation-Sandboxes?style=social" alt="GitHub_Stars"/></a>
   <a href="http://creativecommons.org/publicdomain/zero/1.0/"><img src="https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg" alt="License: CC0-1.0"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Autonomous-Model-Evaluation-Sandboxes/blob/main/CONTRIBUTING.md"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"/></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
@@ -73,63 +73,63 @@ The following SaaS platforms provide managed evaluation environments, automated 
 
 These open-source frameworks and self-hosted platforms provide code-first evaluation pipelines, agent execution sandboxes, and OpenTelemetry-native tracing without vendor lock-in. Sorted by GitHub stargazer count (descending).
 
-- **[Langfuse](https://github.com/langfuse/langfuse)** [![GitHub stars](https://img.shields.io/github/stars/langfuse/langfuse?style=social&color=white)](https://github.com/langfuse/langfuse/stargazers)  
+- **[Langfuse](https://github.com/langfuse/langfuse)** [![GitHub_Stars](https://img.shields.io/github/stars/langfuse/langfuse?style=social&color=white)](https://github.com/langfuse/langfuse/stargazers)  
   *Open-source LLM engineering and observability platform (MIT core).*  
   Full-featured self-hostable platform offering detailed trace trees for multi-step agent workflows, prompt management with version control, LLM-as-a-judge evaluations, and dataset curation. OpenTelemetry-compliant and highly extensible with ClickHouse analytics backend.
 
-- **[Promptfoo](https://github.com/promptfoo/promptfoo)** [![GitHub stars](https://img.shields.io/github/stars/promptfoo/promptfoo?style=social&color=white)](https://github.com/promptfoo/promptfoo/stargazers)  
+- **[Promptfoo](https://github.com/promptfoo/promptfoo)** [![GitHub_Stars](https://img.shields.io/github/stars/promptfoo/promptfoo?style=social&color=white)](https://github.com/promptfoo/promptfoo/stargazers)  
   *Fast, lightweight CLI and library for LLM evaluation and red-teaming (MIT).*  
   Specialized for test-driven development (TDD) of prompts, agent applications, and RAG pipelines. Features automated red teaming against 40+ security vulnerabilities, prompt injection benchmarks, latency/cost diffs, and native integration into GitHub Actions and CI/CD pipelines.
 
-- **[Comet Opik](https://github.com/comet-ml/opik)** [![GitHub stars](https://img.shields.io/github/stars/comet-ml/opik?style=social&color=white)](https://github.com/comet-ml/opik/stargazers)  
+- **[Comet Opik](https://github.com/comet-ml/opik)** [![GitHub_Stars](https://img.shields.io/github/stars/comet-ml/opik?style=social&color=white)](https://github.com/comet-ml/opik/stargazers)  
   *Open-source, end-to-end LLM evaluation and tracing suite (Apache-2.0).*  
   Completely permissive Apache-2.0 platform designed for production AI agent tracing, online and offline LLM evaluation, prompt optimization, and Opik Guardrails. Both frontend and backend are 100% free to self-host via Docker or Kubernetes.
 
-- **[OpenAI Evals](https://github.com/openai/evals)** [![GitHub stars](https://img.shields.io/github/stars/openai/evals?style=social&color=white)](https://github.com/openai/evals/stargazers)  
+- **[OpenAI Evals](https://github.com/openai/evals)** [![GitHub_Stars](https://img.shields.io/github/stars/openai/evals?style=social&color=white)](https://github.com/openai/evals/stargazers)  
   *Framework for evaluating LLMs and systems built on LLMs (MIT).*  
   OpenAI's official evaluation harness for benchmarking models against custom datasets. Supports writing custom `Eval` classes, evaluating complex multi-turn conversational agents, and building standardized benchmark suites.
 
-- **[DeepEval](https://github.com/confident-ai/deepeval)** [![GitHub stars](https://img.shields.io/github/stars/confident-ai/deepeval?style=social&color=white)](https://github.com/confident-ai/deepeval/stargazers)  
+- **[DeepEval](https://github.com/confident-ai/deepeval)** [![GitHub_Stars](https://img.shields.io/github/stars/confident-ai/deepeval?style=social&color=white)](https://github.com/confident-ai/deepeval/stargazers)  
   *The "Pytest for LLMs" open-source evaluation framework (Apache-2.0).*  
   The most practical open-source unit-testing eval framework for CI/CD pipelines. Features 14+ ready-to-use metrics (G-Eval, Hallucination, Faithfulness, Contextual Recall/Precision, Toxicity, Bias), synthetic test dataset generation, red-teaming scans, and standard model benchmark runners (MMLU, GSM8K, HumanEval).
 
-- **[Ragas](https://github.com/vibrantlabsai/ragas)** [![GitHub stars](https://img.shields.io/github/stars/vibrantlabsai/ragas?style=social&color=white)](https://github.com/vibrantlabsai/ragas/stargazers)  
+- **[Ragas](https://github.com/vibrantlabsai/ragas)** [![GitHub_Stars](https://img.shields.io/github/stars/vibrantlabsai/ragas?style=social&color=white)](https://github.com/vibrantlabsai/ragas/stargazers)  
   *Evaluation toolkit for Retrieval-Augmented Generation & agent pipelines (Apache-2.0).*  
   Leading framework for objective evaluation of RAG systems and multi-turn workflows. Provides metrics for faithfulness, answer relevancy, context precision, and automated evolutionary synthetic dataset generation for edge cases.
 
-- **[LM Evaluation Harness](https://github.com/EleutherAI/lm-evaluation-harness)** [![GitHub stars](https://img.shields.io/github/stars/EleutherAI/lm-evaluation-harness?style=social&color=white)](https://github.com/EleutherAI/lm-evaluation-harness/stargazers)  
+- **[LM Evaluation Harness](https://github.com/EleutherAI/lm-evaluation-harness)** [![GitHub_Stars](https://img.shields.io/github/stars/EleutherAI/lm-evaluation-harness?style=social&color=white)](https://github.com/EleutherAI/lm-evaluation-harness/stargazers)  
   *The standard framework for few-shot language model evaluation (MIT).*  
   Maintained by EleutherAI and powers the Hugging Face Open LLM Leaderboard. Features 60+ standardized academic benchmarks (GSM8K, MMLU, ARC, HellaSwag, TruthfulQA) with support for vLLM, HuggingFace transformers, and API-based models.
 
-- **[Arize Phoenix](https://github.com/Arize-ai/phoenix)** [![GitHub stars](https://img.shields.io/github/stars/Arize-ai/phoenix?style=social&color=white)](https://github.com/Arize-ai/phoenix/stargazers)  
+- **[Arize Phoenix](https://github.com/Arize-ai/phoenix)** [![GitHub_Stars](https://img.shields.io/github/stars/Arize-ai/phoenix?style=social&color=white)](https://github.com/Arize-ai/phoenix/stargazers)  
   *AI observability, evaluation, and experiment tracking platform (Elastic License 2.0).*  
   Built natively on OpenTelemetry standards for multi-turn agent tracing, LLM-as-a-judge benchmarking, embedding visualization, dataset versioning, and prompt playground comparisons. Vendor-agnostic with integrations across LangChain, LlamaIndex, DSPy, and smolagents.
 
-- **[Llama Stack](https://github.com/meta-llama/llama-stack)** [![GitHub stars](https://img.shields.io/github/stars/meta-llama/llama-stack?style=social&color=white)](https://github.com/meta-llama/llama-stack/stargazers)  
+- **[Llama Stack](https://github.com/meta-llama/llama-stack)** [![GitHub_Stars](https://img.shields.io/github/stars/meta-llama/llama-stack?style=social&color=white)](https://github.com/meta-llama/llama-stack/stargazers)  
   *Standardized building blocks and evaluation interfaces for LLMs and agents (MIT).*  
   Meta's open standard architecture specifying turnkey APIs and evaluation protocols for inference, safety guardrails, synthetic data generation, scoring, and isolated agent execution.
 
-- **[OpenLLMetry](https://github.com/traceloop/openllmetry)** [![GitHub stars](https://img.shields.io/github/stars/traceloop/openllmetry?style=social&color=white)](https://github.com/traceloop/openllmetry/stargazers)  
+- **[OpenLLMetry](https://github.com/traceloop/openllmetry)** [![GitHub_Stars](https://img.shields.io/github/stars/traceloop/openllmetry?style=social&color=white)](https://github.com/traceloop/openllmetry/stargazers)  
   *OpenTelemetry-native instrumentation SDKs for LLMs and agents (Apache-2.0).*  
   Maintained by Traceloop. Automatically captures standard OpenTelemetry semantic conventions (`gen_ai.*`) across OpenAI, Anthropic, Bedrock, vector databases (Pinecone, Chroma, Qdrant), and frameworks, exporting directly to Datadog, Grafana, Dynatrace, or Jaeger.
 
-- **[SWE-bench](https://github.com/swe-bench/SWE-bench)** [![GitHub stars](https://img.shields.io/github/stars/swe-bench/SWE-bench?style=social&color=white)](https://github.com/swe-bench/SWE-bench/stargazers)  
+- **[SWE-bench](https://github.com/swe-bench/SWE-bench)** [![GitHub_Stars](https://img.shields.io/github/stars/swe-bench/SWE-bench?style=social&color=white)](https://github.com/swe-bench/SWE-bench/stargazers)  
   *Benchmark and evaluation sandbox for software engineering agents (MIT).*  
   Gold standard evaluation benchmark that evaluates autonomous AI agents on real-world GitHub issues and pull requests across complete code repositories using isolated Docker sandboxes for verification.
 
-- **[AgentBench](https://github.com/THUDM/AgentBench)** [![GitHub stars](https://img.shields.io/github/stars/THUDM/AgentBench?style=social&color=white)](https://github.com/THUDM/AgentBench/stargazers)  
+- **[AgentBench](https://github.com/THUDM/AgentBench)** [![GitHub_Stars](https://img.shields.io/github/stars/THUDM/AgentBench?style=social&color=white)](https://github.com/THUDM/AgentBench/stargazers)  
   *Multi-dimensional benchmark for evaluating LLMs as autonomous agents (Apache-2.0).*  
   Evaluates agents across distinct interactive environments including Operating System commands (Bash), Database interactions (SQL), Web navigation, Digital Games, and lateral thinking tasks.
 
-- **[TruLens](https://github.com/truera/trulens)** [![GitHub stars](https://img.shields.io/github/stars/truera/trulens?style=social&color=white)](https://github.com/truera/trulens/stargazers)  
+- **[TruLens](https://github.com/truera/trulens)** [![GitHub_Stars](https://img.shields.io/github/stars/truera/trulens?style=social&color=white)](https://github.com/truera/trulens/stargazers)  
   *OpenTelemetry-native evaluation and agent feedback framework (Apache-2.0).*  
   Specialized evaluators for agentic systems including LogicalConsistency, ExecutionEfficiency, PlanAdherence, PlanQuality, and ToolSelection. Bridges offline test cycles with live production monitoring.
 
-- **[Inspect AI](https://github.com/UKGovernmentBEIS/inspect_ai)** [![GitHub stars](https://img.shields.io/github/stars/UKGovernmentBEIS/inspect_ai?style=social&color=white)](https://github.com/UKGovernmentBEIS/inspect_ai/stargazers)  
+- **[Inspect AI](https://github.com/UKGovernmentBEIS/inspect_ai)** [![GitHub_Stars](https://img.shields.io/github/stars/UKGovernmentBEIS/inspect_ai?style=social&color=white)](https://github.com/UKGovernmentBEIS/inspect_ai/stargazers)  
   *Evaluation framework for AI safety and autonomous agent capabilities (MIT).*  
   Developed by the UK AI Safety Institute. Provides built-in support for multi-step agent tasks, cyber defense evaluations, tool use, model sandboxing, and human-in-the-loop validation.
 
-- **[HELM (Holistic Evaluation of Language Models)](https://github.com/stanford-crfm/helm)** [![GitHub stars](https://img.shields.io/github/stars/stanford-crfm/helm?style=social&color=white)](https://github.com/stanford-crfm/helm/stargazers)  
+- **[HELM (Holistic Evaluation of Language Models)](https://github.com/stanford-crfm/helm)** [![GitHub_Stars](https://img.shields.io/github/stars/stanford-crfm/helm?style=social&color=white)](https://github.com/stanford-crfm/helm/stargazers)  
   *Standardized multi-metric evaluation across accuracy, robustness, fairness, and toxicity (Apache-2.0).*  
   Developed by Stanford Center for Research on Foundation Models (CRFM) to holistically assess foundation models and agents across broad taxonomic domains.
 
@@ -179,10 +179,10 @@ We welcome additions, updates, and corrections from the community!
 1. 🍴 **Fork the repository** to your own GitHub account.
 2. ✍️ **Add or update entries** in `README.md`:
    - For SaaS tools: Specify exact starting prices, specific free tier limits, company valuation/funding, and product capabilities.
-   - For Open-Source tools: Include GitHub link, social star badge with link to stargazers (`style=social&color=white`), license, and core architectural features.
+   - For Open-Source tools: Include GitHub link, social Stars_Badge with link to stargazers (`style=social&color=white`), license, and core architectural features.
 3. 🔢 **Ensure proper sorting**:
    - Keep SaaS entries sorted by company scale (descending).
-   - Keep Open-Source entries sorted by GitHub star count (descending).
+   - Keep Open-Source entries sorted by GitHub Stars_Count (descending).
 4. 🚀 **Open a Pull Request** with a concise description of your additions.
 
 ---
