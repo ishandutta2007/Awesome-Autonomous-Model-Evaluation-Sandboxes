@@ -1,51 +1,64 @@
-# Awesome Autonomous Model Evaluation Sandboxes [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+<div align="center">
 
-> A curated list of top Autonomous Model Evaluation Sandboxes, AI agent test environments, LLM-as-a-judge frameworks, and observability platforms for multi-turn test cycles, isolated evaluation, regression detection, and agent safety benchmarking.
+![Awesome Autonomous Model Evaluation Sandboxes](assets/banner.svg)
 
-[![GitHub stars](https://img.shields.io/github/stars/ishandutta2007/Awesome-Autonomous-Model-Evaluation-Sandboxes?style=social)](https://github.com/ishandutta2007/Awesome-Autonomous-Model-Evaluation-Sandboxes/stargazers)
-[![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/ishandutta2007/Awesome-Autonomous-Model-Evaluation-Sandboxes/blob/main/CONTRIBUTING.md)
+# 🤖 Awesome Autonomous Model Evaluation Sandboxes [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+
+> 🔬 A curated list of top Autonomous Model Evaluation Sandboxes, AI agent test environments, LLM-as-a-judge frameworks, and observability platforms for multi-turn test cycles, isolated evaluation, regression detection, and agent safety benchmarking.
+
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
+  <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Autonomous-Model-Evaluation-Sandboxes/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Autonomous-Model-Evaluation-Sandboxes?style=social" alt="GitHub stars"/></a>
+  <a href="http://creativecommons.org/publicdomain/zero/1.0/"><img src="https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg" alt="License: CC0-1.0"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Autonomous-Model-Evaluation-Sandboxes/blob/main/CONTRIBUTING.md"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"/></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
 **Curated List of SaaS Products & Open-Source GitHub Projects**  
 *Focused on Multi-Turn Test Cycles, Isolated Evaluation, LLM Benchmarking & Agent Observability*  
-**Last updated: March 2026**
+📅 **Last updated: March 2026**
+
+</div>
 
 ---
 
-## Overview
+## 📌 Overview
 
 This repository tracks notable **SaaS platforms** and **open-source projects** for **Autonomous Model Evaluation Sandboxes**. These environments enable AI engineers, platform teams, and LLM practitioners to run multi-turn test cycles in isolated execution sandboxes—tracing every agent step, scoring intermediate and final outputs with LLM judges, stress-testing tool execution, and comparing experiment runs to catch hallucinations and regressions before production deployment.
 
-### Key Capabilities Evaluated
-- **Multi-Turn Agent Trajectory Tracing**: Step-by-step visibility into tool selection, arguments, environment feedback, and intermediate reasoning.
-- **Automated LLM Judges**: Scalable scoring for ground truth alignment, RAG faithfulness, context recall, toxicity, and task completion.
-- **Execution Sandboxing**: Isolated containers and virtualized environments to execute generated agent actions safely.
-- **Experiment Tracking & Regression Guardrails**: CI/CD-friendly test runs to benchmark model versions against baseline prompts and golden datasets.
+### 🎯 Key Capabilities Evaluated
+- 🔄 **Multi-Turn Agent Trajectory Tracing**: Step-by-step visibility into tool selection, arguments, environment feedback, and intermediate reasoning.
+- ⚖️ **Automated LLM Judges**: Scalable scoring for ground truth alignment, RAG faithfulness, context recall, toxicity, and task completion.
+- 🛡️ **Execution Sandboxing**: Isolated containers and virtualized environments to execute generated agent actions safely.
+- 📈 **Experiment Tracking & Regression Guardrails**: CI/CD-friendly test runs to benchmark model versions against baseline prompts and golden datasets.
 
 ---
 
-## Table of Contents
+## 📑 Table of Contents
 
-- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
-- [SaaS & Hosted Platforms](#saashosted-platforms)
-- [Open-Source GitHub Projects](#open-source-github-projects)
-- [Key Architectural Patterns](#key-architectural-patterns)
-- [How to Contribute](#how-to-contribute)
-- [Disclaimer & License Considerations](#disclaimer)
+- [📊 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [☁️ SaaS & Hosted Platforms](#️-saashosted-platforms)
+- [💻 Open-Source GitHub Projects](#-open-source-github-projects)
+- [🏗️ Key Architectural Patterns](#️-key-architectural-patterns)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [💖 Support](#-support)
+- [📈 Star History](#-star-history)
+- [⚠️ Disclaimer & License Considerations](#️-disclaimer)
 
 ---
 
-## Sector Overview & Market Dynamics
+## 📊 Sector Overview & Market Dynamics
 
 The AI evaluation and observability market is valued at approximately **$1.8B to $2.9B** and is expanding rapidly at an estimated **25%–36% CAGR**, projected to exceed **$9B–$13B** by the early 2030s driven by production generative AI and multi-agent deployment. The sector is **moderately to highly fragmented** across niche developer-first point solutions (automated LLM judges, agent sandboxes, guardrails, and telemetry), while simultaneously undergoing rapid strategic consolidation as cloud hyperscalers, data platforms, and enterprise APM leaders acquire standalone tooling.
 
 ---
 
-## SaaS/Hosted Platforms
+## ☁️ SaaS/Hosted Platforms
 
 The following SaaS platforms provide managed evaluation environments, automated regression testing, prompt management, and observability for AI agents and LLMs. The table is ordered by company scale (valuation / total funding raised in descending order).
 
-| Platform | Company Scale (Valuation / Funding) | Pricing (Starting Paid Tier) | Free Tier Limits | Key Highlights & Capabilities |
+| 🏢 Platform | 💰 Company Scale (Valuation / Funding) | 🏷️ Pricing (Starting Paid Tier) | 🎁 Free Tier Limits | ✨ Key Highlights & Capabilities |
 | :--- | :--- | :--- | :--- | :--- |
 | **[LangSmith](https://smith.langchain.com/)** | **$1.25B Valuation** ($260M raised) | **$39/seat/month** (Plus tier) | **5,000 base traces/month**, 1 seat, 14-day data retention | Deep tracing of LLM chains, agent steps, token usage, latency, and cost metrics; Enterprise self-hosted Kubernetes options available. |
 | **[Braintrust](https://www.braintrust.dev/)** | **$800M Valuation** ($121M raised) | **$249/month** (Pro tier) | **10,000 eval runs/month**, 1 GB log storage/month, 14-day retention | End-to-end evaluation datasets, AI proxy with automated caching, prompt engineering, and AI-assisted Loop Agent for prompt auto-tuning. |
@@ -56,7 +69,7 @@ The following SaaS platforms provide managed evaluation environments, automated 
 
 ---
 
-## Open-Source GitHub Projects
+## 💻 Open-Source GitHub Projects
 
 These open-source frameworks and self-hosted platforms provide code-first evaluation pipelines, agent execution sandboxes, and OpenTelemetry-native tracing without vendor lock-in. Sorted by GitHub stargazer count (descending).
 
@@ -122,7 +135,7 @@ These open-source frameworks and self-hosted platforms provide code-first evalua
 
 ---
 
-## Key Architectural Patterns
+## 🏗️ Key Architectural Patterns
 
 ```
 +-------------------------------------------------------------+
@@ -151,35 +164,54 @@ These open-source frameworks and self-hosted platforms provide code-first evalua
 ```
 
 When building an enterprise-grade self-hosted autonomous model evaluation stack:
-1. **Tracing Layer**: Implement OpenTelemetry semantic conventions via **OpenLLMetry** or **Arize Phoenix**.
-2. **CI/CD Unit Tests**: Run continuous regression suites using **DeepEval** or **Promptfoo**.
-3. **Domain & RAG Scoring**: Evaluate retrieval and faithfulness metrics with **Ragas**.
-4. **Agent Benchmarking & Sandboxing**: Execute dynamic code and terminal actions inside **SWE-bench** or **Inspect AI** sandboxed containers.
-5. **Observability & Analytics**: Store and visualize traces with **Langfuse** (backed by ClickHouse) or **Comet Opik**.
+1. 📡 **Tracing Layer**: Implement OpenTelemetry semantic conventions via **OpenLLMetry** or **Arize Phoenix**.
+2. 🧪 **CI/CD Unit Tests**: Run continuous regression suites using **DeepEval** or **Promptfoo**.
+3. 🎯 **Domain & RAG Scoring**: Evaluate retrieval and faithfulness metrics with **Ragas**.
+4. 📦 **Agent Benchmarking & Sandboxing**: Execute dynamic code and terminal actions inside **SWE-bench** or **Inspect AI** sandboxed containers.
+5. 📊 **Observability & Analytics**: Store and visualize traces with **Langfuse** (backed by ClickHouse) or **Comet Opik**.
 
 ---
 
-## How to Contribute
+## 🤝 How to Contribute
 
 We welcome additions, updates, and corrections from the community!
 
-1. **Fork the repository** to your own GitHub account.
-2. **Add or update entries** in `README.md`:
+1. 🍴 **Fork the repository** to your own GitHub account.
+2. ✍️ **Add or update entries** in `README.md`:
    - For SaaS tools: Specify exact starting prices, specific free tier limits, company valuation/funding, and product capabilities.
    - For Open-Source tools: Include GitHub link, social star badge with link to stargazers (`style=social&color=white`), license, and core architectural features.
-3. **Ensure proper sorting**:
+3. 🔢 **Ensure proper sorting**:
    - Keep SaaS entries sorted by company scale (descending).
    - Keep Open-Source entries sorted by GitHub star count (descending).
-4. **Open a Pull Request** with a concise description of your additions.
+4. 🚀 **Open a Pull Request** with a concise description of your additions.
 
 ---
 
-## Disclaimer
+## 💖 Support
 
-- This is a community-curated collection intended for educational and architectural evaluation purposes.
-- Check each project's respective license before deploying in commercial or proprietary environments. While projects like **DeepEval**, **Ragas**, **Comet Opik**, and **OpenLLMetry** are Apache-2.0, others like **Arize Phoenix** use Elastic License 2.0 (source-available), and platforms like **LangSmith** and **Braintrust** operate proprietary hosted clouds with Enterprise on-premise options.
-- Evaluation judges are probabilistic; always calibrate automated LLM scores against human ground-truth annotations for critical production deployments.
+If you find this repository valuable for your AI evaluation, agent testing, or observability research, please consider supporting the project:
+
+- ⭐ **Star this repository** to help others discover it!
+- 🍴 **Fork and contribute** your favorite evaluation tools and sandboxes.
+- 📢 **Share it** with fellow AI engineers and researchers on Discord, X/Twitter, and LinkedIn.
+- ☕ **Buy a coffee & sponsor**: Support continuous maintenance via the [GitHub Sponsors Dashboard](https://github.com/sponsors/ishandutta2007). Thank you for your generosity!
 
 ---
 
-*Maintained by [Ishan Dutta](https://github.com/ishandutta2007) and contributors. Star the repo if this helps your AI engineering workflow!*
+## 📈 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Autonomous-Model-Evaluation-Sandboxes&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Autonomous-Model-Evaluation-Sandboxes&type=date&legend=top-left)
+
+---
+
+## ⚠️ Disclaimer
+
+- 📖 This is a community-curated collection intended for educational and architectural evaluation purposes.
+- ⚖️ Check each project's respective license before deploying in commercial or proprietary environments. While projects like **DeepEval**, **Ragas**, **Comet Opik**, and **OpenLLMetry** are Apache-2.0, others like **Arize Phoenix** use Elastic License 2.0 (source-available), and platforms like **LangSmith** and **Braintrust** operate proprietary hosted clouds with Enterprise on-premise options.
+- 🧠 Evaluation judges are probabilistic; always calibrate automated LLM scores against human ground-truth annotations for critical production deployments.
+
+---
+
+<div align="center">
+  <b>Made with ❤️ for AI engineers, platform teams, and researchers building reliable agent evaluation systems.</b>
+</div>
