@@ -1,6 +1,6 @@
 <div align="center">
 
-![Awesome Autonomous Model Evaluation Sandboxes](assets/banner.svg)
+![Awesome Autonomous Model Evaluation Sandboxes](https://raw.githubusercontent.com/ishandutta2007/Awesome-Autonomous-Model-Evaluation-Sandboxes/main/assets/banner.svg)
 
 # 🤖 Awesome Autonomous Model Evaluation Sandboxes [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
